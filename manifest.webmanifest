@@ -1,7 +1,7 @@
 {
-  "name": "Crypto IDX Mobile Monitor V4",
-  "short_name": "IDX Mobile V4",
-  "description": "Binomo Crypto IDX visual demo research and manual screenshot journal; experimental screen sharing when available",
+  "name": "Binomo Multi-Asset Candle Monitor V5",
+  "short_name": "Binomo Monitor V5",
+  "description": "1m and aligned 2m visual chart demo research with multiple selectable assets; no trading automation or exact price feed",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

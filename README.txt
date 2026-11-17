@@ -1,33 +1,35 @@
-Crypto IDX Mobile Monitor V4 — Free demo research PWA
+Binomo Multi-Asset Candle Monitor V5 | FREE | DEMO RESEARCH ONLY
 
-WHAT YOU GET
-- Mobile-first page with Choose Screenshot, optional Paste Screenshot and Try Live Screen.
-- Local visual candle detection, 1m and 4m research cards; stale or static inputs show WAIT.
-- Preserve V3 pixel indicator notes, live-screen experimental read-only mode, demo-learning journal, JSON backup and CSV export.
-- Save screenshot observations locally and export JSON.
-- No external subscriptions or sign-in; no Binomo trade placement.
+WHAT CHANGED FROM V4
+- 1-minute next candle and aligned 2-minute NEXT COMPLETE candle windows (IST).
+- Next complete 2m candle begins at next even minute (e.g. 20:16-20:18).
+- V5 records 1m and 2m visual predictions only when live chart sharing is active, clock checked, and visual quality sufficient.
+- WAIT diagnostic explains why. Screenshot mode shows OBSERVED HISTORICAL TREND even though live prediction remains WAIT.
+- Multi-asset selection: IDX, common forex pairs, crypto and commodities, custom asset name.
+- Separate asset names in screenshot observation history and automatic journal; asset change resets confirmation.
+- Preserves prior V3 learning history on the same domain/browser; app does NOT verify broker settlements.
+- No paid API or AI, no automatic trades, no Binomo credentials.
 
-IMPORTANT LIMITATIONS
-- A GitHub Pages website does NOT have a Binomo Crypto IDX authenticated price feed.
-- Screenshots are static historical observations; they cannot create automatic next-candle WIN/LOSS results.
-- Browser screen sharing on iPhone / iOS 27 is experimental and may be unsupported or paused when the page is backgrounded. Even if a screen sharing picker appears, continuous monitoring of Binomo while this page is backgrounded is NOT guaranteed.
-- The desktop live visual tracker marks only simulated candle-direction matches and only when it observes reliable sequential frames. They are not actual Binomo settled wins/losses.
-- Bot/AI trade execution may breach Binomo rules. This app never places trades and is only for visual demo research.
+HOW TO UPLOAD ON GITHUB PAGES
+1. Extract ZIP in iPhone Files app or computer.
+2. Upload ALL THESE FILES into the ROOT of your existing GitHub Pages repository's main branch:
+   index.html, learning-v5.js, mobile-v5.js, icon.svg, manifest.webmanifest, service-worker.js.
+3. Keep the new filenames. If the repository contains learning-v3.js/mobile-v4.js, leave them harmless or remove later.
+4. In GitHub Settings > Pages select branch main, folder /(root), save, and check successful deployment.
+5. Open your existing project Pages URL. To bypass an old cached copy, add ?v=5 to the URL.
 
-DEPLOY ON YOUR EXISTING GITHUB REPOSITORY (5th)
-1. Extract ZIP.
-2. Open your GitHub repository https://github.com/manikanta0k-sys/5th in Chrome.
-3. Upload/overwrite ALL six website files at repository root: index.html, learning-v3.js, mobile-v4.js, icon.svg, manifest.webmanifest, service-worker.js.
-4. GitHub Pages Settings -> Pages: Deploy from branch: main / (root).
-5. Open https://manikanta0k-sys.github.io/5th/ . That URL is the EXPECTED Pages link, not a confirmed deployment. If old content appears, refresh browser once or clear the site's cache.
-6. On iPhone you may use Add to Home Screen from browser sharing options if supported. Home Screen icon is optional.
+HOW TO USE
+- Select the ACTUAL asset in Binomo and select same asset on this app; availability differs across accounts.
+- For iPhone screenshot: open Binomo Demo 1m chart, take screenshot; return here, tap Choose Screenshot. Inspect observed trend and WAIT diagnostics. Historical image cannot support continuous live prediction/results.
+- For experimental live share: user grants browser screen-capture permission, selects chart, crops only chart candles, checks asset and clock. Stay in foreground. Support varies; if capture pauses app shows WAIT and avoids fabricated results.
+- Observe both time windows: next 1-minute and next full 2-minute candle (even minute boundaries). They are hypotheses and may be wrong.
+- Export V3/V5 journal or mobile notes to back up your device; browser clearing may erase them.
 
-IPHONE FLOW
-- Open Binomo DEMO on iPhone; choose Crypto IDX 1-minute chart.
-- Take a screenshot, then return to the new dashboard, tap Choose Screenshot, and select the screenshot.
-- The app analyzes detected chart bars automatically. Tap Mobile chart crop or drag on the preview if needed.
-- Chart-based history shows but signals stay WAIT: static screenshot cannot provide a verified time-aligned future prediction.
-- Save candle observation / export notes for later comparison.
-- Optionally try screen sharing using Try Live Screen. Keep the dashboard foreground; if connection stalls, its display reverts to WAIT.
+DATA SOURCES AND LIMITATIONS
+- Source is ONLY manually selected Binomo screenshot or user-shared chart pixels; NOT official Binomo OHLC or ticker.
+- Names in watchlist do not authenticate the on-screen asset. No Binomo universe API available to this static site; some names may not be offered to your account.
+- Crypto IDX / EUR IDX cannot be equated with Binance BTC/USDT or third-party Forex quotes.
+- Pixels cannot reliably derive exact trading returns, open/close quote or predict next candle. Visual WIN/LOSS is not broker settlement.
+- iPhone cannot be assumed to share a second tab continuously or keep browser JS running in background.
 
-There is no way to guarantee accurate next candles, no certainty that losses will not recur, and no live broker-source data in this free web-only app.
+If an asset is not listed, select Other asset and type its Binomo name. NEVER rely on this as a guaranteed trade signal.
